@@ -5,7 +5,7 @@ import "./interfaces/IERC165.sol";
 
 contract MyERC721Implementation is ERC721, ERC165
 {
-    uint256 private _currentTokenId;
+    uint256 private _currentTokenId; // the idea was to increment this variable when minting and decrement it when burning NFT's
 
     mapping(address => uint256[]) private _ownersToTokenIds;
     mapping(uint256 => address) private _tokenIdsToOwners;
