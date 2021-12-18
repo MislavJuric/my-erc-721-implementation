@@ -6,4 +6,9 @@ You can find my implementation in the **contracts** folder.
 
 This project taught me that I should familiarize myself with smart contract design patterns. In particular, I seem to be fond of doing things with for loops, which is an anti-pattern in smart contract development because of the gas costs associated with iterating over a large array. This is an area I can improve upon.
 
+After looking at [OpenZeppelin's ERC-721 implementation](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol), I noticed that I could have done the following things better:
+
+- put repeated checks into their own methods
+- used hooks
+
 **Important note**: I *do* know how to use blockchain development tools, write tests, deploy contracts etc. For a more comprehensive project of mine, visit [MislavCoin](https://github.com/MislavJuric/MislavCoin).
